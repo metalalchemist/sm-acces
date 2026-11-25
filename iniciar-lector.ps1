@@ -10,6 +10,7 @@ function Resolve-ProjectPath([string]$value){
 $rom=Resolve-ProjectPath $manifest.rom_path
 $emulatorDir=Resolve-ProjectPath $manifest.emulator_dir
 $configTemplate=Resolve-ProjectPath $manifest.config_template
+if(-not(Test-Path -LiteralPath $rom)){throw "Falta la ROM configurada en test/project.json: $rom"}
 if((Get-FileHash -LiteralPath $rom).Hash -ne $manifest.rom_sha256){throw 'La ROM no coincide con la traduccion soportada'}
 $player=Join-Path $root 'player'
 $saves=Join-Path $root 'partidas'

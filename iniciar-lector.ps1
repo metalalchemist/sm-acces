@@ -24,13 +24,19 @@ New-Item -ItemType Directory -Force -Path $player,$saves | Out-Null
 foreach($name in @('snes9x.exe','lua51.dll','lua5.1.dll','Valid.Ext')){
  $src=Join-Path $emulatorDir $name
  $dest=Join-Path $player $name
- if(Test-Path -LiteralPath $dest){
+ if(-not(Test-Path -LiteralPath $dest)){
+  if(-not(Test-Path -LiteralPath $src)){throw "Falta $name en player y en la fuente configurada: $src"}
+  Copy-Item -LiteralPath $src -Destination $dest
+ }elseif(Test-Path -LiteralPath $src){
   if((Get-FileHash -LiteralPath $dest).Hash -ne (Get-FileHash -LiteralPath $src).Hash){throw "Binario diferente en player: $name; no se sobrescribe"}
- }else{Copy-Item -LiteralPath $src -Destination $dest}
+ }
 }
 $configPath=Join-Path $player 'snes9x.conf'
 if(Test-Path -LiteralPath $configPath){$config=[IO.File]::ReadAllText($configPath)}
-else{$config=[IO.File]::ReadAllText($configTemplate)}
+else{
+ if(-not(Test-Path -LiteralPath $configTemplate)){throw "Falta snes9x.conf en player y la plantilla configurada: $configTemplate"}
+ $config=[IO.File]::ReadAllText($configTemplate)
+}
 $settings=@{Mute='FALSE';PauseWhenInactive='FALSE';'Input:Background'='OFF';'Input:BackgroundKeyHotkeys'='OFF';'Dir:Lock'='TRUE'}
 foreach($pair in @(@('Dir:SRAM',$saves),@('Dir:Savestates',$saves),@('Dir:Roms',(Join-Path $player 'Roms')),
  @('Dir:Cheats',(Join-Path $player 'Cheats')),@('Dir:Patches',(Join-Path $player 'Patches')),

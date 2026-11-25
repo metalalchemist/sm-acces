@@ -40,30 +40,31 @@ Visual Studio.
 
 ## Instalación y configuración
 
-1. Descomprimir Snes9x-Lua 1.63 en una carpeta local, por ejemplo
-   `tools/snes9x-lua-1.63/snes9x-lua-1.63-win32-x64`. Debe contener `snes9x.exe` y la DLL de Lua.
-2. Colocar la ROM con el parche Sayans 102 % en una carpeta local, por ejemplo
-   `roms/Secret of Mana (U) [T+Spa102_Sayans].smc`. No se modifica ni se distribuye la ROM.
-3. Editar `test/project.json` con las rutas locales. Las rutas relativas se resuelven desde la
-   raíz del proyecto, así que se puede dejar la configuración portable:
+1. Preparar el emulador de una de estas dos formas: descomprimir Snes9x-Lua 1.63 en
+   `tools/snes9x-lua-1.63/snes9x-lua-1.63-win32-x64`, o dejar `snes9x.exe`, las DLL de Lua,
+   `Valid.Ext` y `snes9x.conf` directamente en `player/`. `tools/` es solo la fuente opcional
+   contra la que se comparan los binarios; si no existe, se usa lo que ya hay en `player/`.
+2. Colocar la ROM con el parche Sayans 102 % en `player/Roms/game.sfc`. No se modifica ni se
+   distribuye la ROM. El lanzador compara su SHA-256 con el valor fijo `rom_sha256` y rechaza
+   cualquier otra ROM antes de iniciar el emulador.
+3. No hay que editar rutas absolutas: todo se resuelve desde la raíz del proyecto, así que la
+   carpeta se puede mover, por ejemplo a `C:\SM`, sin tocar `test/project.json`:
 
    ```json
    {
      "schema": 1,
      "profile": "snes9x-lua-1.63-windows",
      "project_id": "sm-access",
-     "rom_path": "roms/Secret of Mana (U) [T+Spa102_Sayans].smc",
+     "rom_path": "player/Roms/game.sfc",
      "emulator_dir": "tools/snes9x-lua-1.63/snes9x-lua-1.63-win32-x64",
      "config_template": "tools/snes9x-lua-1.63/snes9x-lua-1.63-win32-x64/snes9x.conf",
      "rom_sha256": "70F29FF2870171601333272F64A1B7F8040DE3C137F336B7AFCC97EC679951AD"
    }
    ```
 
-   El valor de `rom_sha256` debe corresponder a la ROM con el parche indicado; el lanzador
-   comprueba el hash antes de copiarla.
-4. Ejecutar `iniciar-lector.cmd` desde la raíz del proyecto. El lanzador prepara una copia
-   aislada del emulador en `player/`, copia la ROM a `player/Roms/game.sfc`, guarda las partidas
-   en `partidas/` y genera `player/game.lua` con el lector cargado. Si el lector ya está activo,
+4. Ejecutar `iniciar-lector.cmd` desde la raíz del proyecto. El lanzador usa la ROM y los
+   binarios que ya estén en `player/`, guarda las partidas en `partidas/` y genera
+   `player/game.lua` con el lector cargado. Si el lector ya está activo,
    `recargar-lector.ps1` permite recargarlo desde la consola Lua sin reiniciar ni cargar una
    partida.
 

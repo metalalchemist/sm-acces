@@ -1,0 +1,4 @@
+interface:
+  display_name: "Probar un lector SNES"
+  short_description: "Valida lectores en copias aisladas del juego"
+  default_prompt: "Usa $snes-probar-lector para validar este lector SNES sin alterar la partida habitual."

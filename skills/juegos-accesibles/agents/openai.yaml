@@ -1,0 +1,4 @@
+interface:
+  display_name: "Accesibilidad de videojuegos"
+  short_description: "Método general con adaptadores propios por juego"
+  default_prompt: "Usa $juegos-accesibles para implementar y validar accesibilidad conservando la partida y los controles."

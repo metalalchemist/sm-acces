@@ -1,0 +1,4 @@
+interface:
+  display_name: "Leer texto y menús SNES"
+  short_description: "Añade voz a diálogos, decisiones y combate"
+  default_prompt: "Usa $snes-leer-texto-menus para crear lectura accesible de los diálogos y menús de este juego SNES."

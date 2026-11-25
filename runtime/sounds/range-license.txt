@@ -1,0 +1,1 @@
+range_in.wav and range_out.wav: original synthesized tones for SM access. Dedicated to the public domain under CC0 1.0. Generator: tests/make-range-sounds07.py. No third-party recording.

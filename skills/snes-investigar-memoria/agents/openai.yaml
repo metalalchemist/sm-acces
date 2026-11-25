@@ -1,0 +1,4 @@
+interface:
+  display_name: "Investigar memoria SNES"
+  short_description: "Identifica estados y rutinas nativas del juego"
+  default_prompt: "Usa $snes-investigar-memoria para investigar la ROM y los estados de este juego de Super Nintendo."

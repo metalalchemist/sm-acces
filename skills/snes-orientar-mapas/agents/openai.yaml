@@ -1,0 +1,4 @@
+interface:
+  display_name: "Orientar por mapas SNES"
+  short_description: "Localiza objetos, accesos, rutas y vehículos"
+  default_prompt: "Usa $snes-orientar-mapas para añadir referencias y rutas accesibles a este mapa SNES."

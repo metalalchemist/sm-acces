@@ -1,0 +1,26 @@
+-- Same native, accessible sound-guide dialog used by Chrono; real sample IDs.
+return {
+ {id=9,label='Pared a la izquierda: proximidad.',volume=1.0,pan=-0.8},
+ {id=10,label='Pared a la derecha: proximidad.',volume=1.0,pan=0.8},
+ {id=7,label='Pared al norte: proximidad.',volume=1.0,pan=0},
+ {id=8,label='Pared al sur: proximidad.',volume=1.0,pan=0},
+ {id=5,label='Choque contra pared: movimiento rechazado.',volume=1.0,pan=0},
+ {id=0,label='Objeto interactivo: proximidad y recogida de la espada.',volume=1.0,pan=0},
+ {id=6,label='Salida: proximidad.',volume=1.0,pan=0},
+ {id=11,label='Dos tonos agudos: enemigo dentro del alcance conservador previsto de espada, lanza o nudillo normal en tu orientación actual. No cubre ataques cargados. La práctica de la hormiga conserva su perfil de espada.',volume=1.0,pan=0},
+ {id=12,label='Un tono grave: enemigo fuera del alcance previsto de espada, lanza o nudillo normal, o mal alineado.',volume=1.0,pan=0},
+ {id=4,label='Peligro: un enemigo identificado inicia un ataque dirigido hacia ti o su caja de ataque alcanza tu cuerpo.',volume=1.0,pan=0},
+ {id=2,label='Potencia del arma recuperada al cien por ciento; no significa carga especial máxima.',volume=1.0,pan=0},
+ {id=15,label='Un tono de carga: alcanzaste otro nivel de golpe especial.',volume=1.0,pan=0},
+ {id=16,label='Dos tonos de carga: carga máxima alcanzada. Suelta el ataque para ejecutar.',volume=1.0,pan=0},
+ {id=17,label='Práctica de la hormiga: se acerca una decisión de ataque a corta distancia; aún no identifica qué ataque será.',volume=1.0,pan=0},
+ {id=18,label='Práctica de la hormiga: empieza un ataque de garras. El margen es corto.',volume=1.0,pan=0},
+ {id=19,label='Práctica de la hormiga: prepara o lanza un proyectil que sigue al objetivo.',volume=1.0,pan=0},
+ {id=20,label='Magia dirigida de la hormiga o lanzamiento de sueño de la planta. Tres pulsos. No garantiza que caminar lo esquive.',volume=1.0,pan=0},
+ {id=3,label='Has recibido daño.',volume=1.0,pan=0},
+ {id=13,label='Maleza u otro terreno cortable con la espada: delante y a alcance previsto. Pulsa B para cortar.',volume=1.0,pan=0},
+ {id=14,label='Persona seleccionada o persona de referencia cercana. Mira hacia ella y pulsa B para hablar.',volume=1.0,pan=0},
+ {id=21,label='Letrero cercano: sonido savepoint de Chrono. Mira hacia él y pulsa B para leerlo.',volume=1.0,pan=0},
+ {id=22,label='Interruptor de mecanismo: teleporte de Chrono. El sonido lo localiza; consulta su estado con Control F7. En el Palacio de Agua se activa caminando; la calavera de Gaia se golpea una vez con el arma.',volume=1.0,pan=0},
+ {id=23,label='Escaleras del castillo de Pandora, Kippo o Gaia: proximidad, muestra de Chrono. Se cruzan caminando; Control F7 consulta el destino.',volume=1.0,pan=0}
+}

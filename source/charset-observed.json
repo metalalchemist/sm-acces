@@ -1,0 +1,10 @@
+{
+  "rom_sha256": "70f29ff2870171601333272f64a1b7f8040de3c137f336b7afcc97ec679951ad",
+  "status": "partial; title, naming instructions, prologue and opening field dialogue",
+  "evidence": "tests/native-start-check, tests/reader01-check and tests/boot-reader01-check",
+  "overrides_from_us": {"C3": "á", "C4": "é", "C6": "í", "C7": "ó", "C9": "ú", "97": "¡", "B1": "¿"},
+  "context_exception": "Name UI keeps W/w via native ROM tile-to-glyph conversion",
+  "additional_evidence": {"C2": "ñ: Muñequera, native Neko stock screenshot tests/hormiga12-neko25-research/stock-all10.png", "C9": "ú: confirmed explicitly by the player on 2026-11-20"},
+  "unverified": ["ü", "other special symbols"],
+  "policy": "Keep unknown codes visible in logs; never substitute an English glyph silently."
+}

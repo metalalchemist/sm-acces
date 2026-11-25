@@ -1,0 +1,232 @@
+[
+  {
+    "source": "chrono-access/runtime/sounds/bed.wav",
+    "local": "runtime\\sounds\\bed.wav",
+    "sha256": "7df2580bcc8fa2226aa7be7fa32a06953528f0c360cf9dc04bccab51ec147d17",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 17861,
+    "seconds": 0.8100226757369614
+  },
+  {
+    "source": "chrono-access/runtime/sounds/bell_timing.wav",
+    "local": "runtime\\sounds\\bell_timing.wav",
+    "sha256": "e124996520ed85751d67ec06b7bcfea773d5d7b3ce827232f070ff21185ebb45",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 1323,
+    "seconds": 0.06
+  },
+  {
+    "source": "chrono-access/runtime/sounds/clock.wav",
+    "local": "runtime\\sounds\\clock.wav",
+    "sha256": "f3fe92ea3035af69a85d8a8e77bac3259fa42afd4145ec5066c8aed5910afd5a",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 16758,
+    "seconds": 0.76
+  },
+  {
+    "source": "chrono-access/runtime/sounds/connection.wav",
+    "local": "runtime\\sounds\\connection.wav",
+    "sha256": "1e9976f78934946cd401cde6078a69d9e585230a16628946f3d4f0f9e548257c",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 50274,
+    "seconds": 2.28
+  },
+  {
+    "source": "chrono-access/runtime/sounds/door.wav",
+    "local": "runtime\\sounds\\door.wav",
+    "sha256": "ee1d9a37be7965234f24c9cf0662e9727003e2c0a4ee76e5eba4f64f5f9755c7",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 6836,
+    "seconds": 0.31002267573696146
+  },
+  {
+    "source": "chrono-access/runtime/sounds/enemy.wav",
+    "local": "runtime\\sounds\\enemy.wav",
+    "sha256": "beca37cb7a75628903493be10428b7926d5a922e7766b7bbd3db332ba3c9463e",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 7694,
+    "seconds": 0.3489342403628118
+  },
+  {
+    "source": "chrono-access/runtime/sounds/furniture.wav",
+    "local": "runtime\\sounds\\furniture.wav",
+    "sha256": "0322c67a64469bdbb4fbee79d350e57e171f8afecfd18a16ea2be2e003065b64",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 14002,
+    "seconds": 0.6350113378684807
+  },
+  {
+    "source": "chrono-access/runtime/sounds/games.wav",
+    "local": "runtime\\sounds\\games.wav",
+    "sha256": "c58694a075a3342fd26aaf8e422733c72b25245d6c72328cb8413ad65b434d7d",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 8686,
+    "seconds": 0.39392290249433104
+  },
+  {
+    "source": "chrono-access/runtime/sounds/item.wav",
+    "local": "runtime\\sounds\\item.wav",
+    "sha256": "688d02d2a43d588cdb97fccbcdd0b82222a081de1c54c9f61cc018917bc7b94b",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 7277,
+    "seconds": 0.3300226757369614
+  },
+  {
+    "source": "chrono-access/runtime/sounds/object_hit.wav",
+    "local": "runtime\\sounds\\object_hit.wav",
+    "sha256": "ba80d51df2f369459b9fa36ef60e13940ca38c8ebc77959e7db3ece10a8a403d",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 4851,
+    "seconds": 0.22
+  },
+  {
+    "source": "chrono-access/runtime/sounds/person.wav",
+    "local": "runtime\\sounds\\person.wav",
+    "sha256": "50697f3f97e6c0c9a4ebf9ea363bec3af74e8f310df0938c0998a09dff896ed3",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 7718,
+    "seconds": 0.35002267573696144
+  },
+  {
+    "source": "chrono-access/runtime/sounds/save_point.wav",
+    "local": "runtime\\sounds\\save_point.wav",
+    "sha256": "7b727b8b2709ba174489a6ff8586ed87751ff91eb72b14225a9be99f3df1aea4",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 33957,
+    "seconds": 1.54
+  },
+  {
+    "source": "chrono-access/runtime/sounds/sign.wav",
+    "local": "runtime\\sounds\\sign.wav",
+    "sha256": "996bc582499cdb8c86b98995296041c227a94df67f361e53aa338ab320144737",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 5292,
+    "seconds": 0.24
+  },
+  {
+    "source": "chrono-access/runtime/sounds/stairs.wav",
+    "local": "runtime\\sounds\\stairs.wav",
+    "sha256": "6d8dd5a4b7db67317c4ef9ed683b70e35fff3c09639cfb6cc0b76ad6069e94e7",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 7718,
+    "seconds": 0.35002267573696144
+  },
+  {
+    "source": "chrono-access/runtime/sounds/wall_down.wav",
+    "local": "runtime\\sounds\\wall_down.wav",
+    "sha256": "6b6e81347ac092c7a6c4f4beb149a65de3bd846f0a13ba29b48d346863e29018",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 42888,
+    "seconds": 1.9450340136054423
+  },
+  {
+    "source": "chrono-access/runtime/sounds/wall_hit.wav",
+    "local": "runtime\\sounds\\wall_hit.wav",
+    "sha256": "2d8501ba612877f4a9d6eda79ccc50cea9cec8085bc8824ba33c16ce3778cf14",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 6814,
+    "seconds": 0.3090249433106576
+  },
+  {
+    "source": "chrono-access/runtime/sounds/wall_left.wav",
+    "local": "runtime\\sounds\\wall_left.wav",
+    "sha256": "9fcee88cb97a76f507c7f4ce56b6b8f5e453ac4d2bc958b8fa13a63893fdc1cf",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 37926,
+    "seconds": 1.72
+  },
+  {
+    "source": "chrono-access/runtime/sounds/wall_right.wav",
+    "local": "runtime\\sounds\\wall_right.wav",
+    "sha256": "03d2aa2bf8f241f3be615b6bbe7d4ff91430f65a9f7e1e6f5438982e9e3d330f",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 40131,
+    "seconds": 1.82
+  },
+  {
+    "source": "chrono-access/runtime/sounds/wall_up.wav",
+    "local": "runtime\\sounds\\wall_up.wav",
+    "sha256": "bae06f8005a138c912a6a0e61bab426604d9eb9d49b51598e279d3e013163fb6",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 35280,
+    "seconds": 1.6
+  },
+  {
+    "source": "chrono-access/runtime/chrono_audio.dll",
+    "local": "runtime\\chrono_audio.dll",
+    "sha256": "fadd6fa6aa4e1d61d8c2561193a543dda603069071864630c7f0f4a5da0c63dd",
+    "pe_machine": "8664"
+  },
+  {
+    "source": "chrono-access/runtime/chrono_prism_v2.dll",
+    "local": "runtime\\chrono_prism_v2.dll",
+    "sha256": "58c9d3764e92603270b5804d0d2b8462b5cae967b5b8f1ce1577cf9205ed62f3",
+    "pe_machine": "8664"
+  },
+  {
+    "source": "chrono-access/runtime/prism.dll",
+    "local": "runtime\\prism.dll",
+    "sha256": "7c7d09c8c7306e8e1a0c46d603ccb2a391c194c77843400c11b746e7dd56a467",
+    "pe_machine": "8664"
+  },
+  {
+    "source": "chrono-access/chrono_audio.cpp",
+    "local": "runtime\\chrono_audio.cpp",
+    "sha256": "5d7af99760c187d835da162702c2032673fafb6af4431dd1c01560368253fb22"
+  },
+  {
+    "source": "chrono-access/chrono_prism.cpp",
+    "local": "runtime\\chrono_prism.cpp",
+    "sha256": "1cd7cfaba856cda7abdfee34c8384b9372aeb2a57aae0d2dfb081c96907ec5f3"
+  },
+  {
+    "source": "chrono-access/sounds/teleporte.mp3",
+    "local": "runtime/sounds/teleporte.wav",
+    "source_sha256": "4d74a4548df4c85f541cad76e15b7028435bae181fc058ccd05d024cbc9babe0",
+    "sha256": "b4a6f6e2bcc5c07b78528eefdb320312d3f8f1fdfb669f0d0a23a2b07b42c3ce",
+    "channels": 1,
+    "sample_rate": 22050,
+    "bits": 16,
+    "frames": 11929,
+    "seconds": 0.5409977324263039,
+    "decoder": "Windows Media Foundation; test/decode-teleporte27.cpp"
+  }
+]

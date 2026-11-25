@@ -1,0 +1,4 @@
+interface:
+  display_name: "Asistir desafíos SNES"
+  short_description: "Diseña ayudas opcionales con cancelación"
+  default_prompt: "Usa $snes-asistir-desafios para crear ayuda opcional y cancelable para este desafío SNES."

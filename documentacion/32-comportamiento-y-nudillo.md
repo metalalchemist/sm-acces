@@ -1,0 +1,13 @@
+# Comportamiento y alcance del nudillo
+
+En la cuadrícula de Comportamiento, **1 es el extremo izquierdo y 4 el derecho**. Hacia la izquierda favorece ataque; hacia la derecha, guardia. Las posiciones 2 y 3 son centro izquierdo y centro derecho. En vertical, 1 está arriba y favorece acercarse; 4 abajo y favorece alejarse. El lector anuncia esas posiciones y el personaje seleccionado.
+
+Carga máxima 0 indica a la IA que use ataques normales sin esperar una carga especial. El máximo disponible depende del arma y la habilidad de ese personaje. La lectura distingue el único nivel 0 disponible de un selector que permite, por ejemplo, 0 y 1. Cruceta cambia el borrador; B pasa a carga, arriba/abajo la cambia y otro B aplica. Y vuelve. Control F1 repite sin modificar ajustes. No se cambia automáticamente el comportamiento de ningún personaje.
+
+El nudillo o guante de tipo nativo 0 tiene previsión sonora de ataques normales. Usa el personaje que controlas, incluso el secundario: dos tonos agudos indican alcance conservador previsto; uno grave, fuera de alcance o mala alineación. Control F3 consulta arma, potencia recuperada y carga disponible, como antes. La guía Control F9 con menú abierto explica los mismos tonos.
+
+El perfil se midió con cajas nativas C0..C3: cuatro variantes de golpe por cada dirección. La previsión exige cobertura en las cuatro. Los perfiles anteriores de espada y lanza conservan tres variantes. No se copió su radio al nudillo. Carga, animación de ataque, menús y estados incompatibles suspenden la previsión. El aviso no garantiza daño frente a movimiento, evasión o azar, ni cubre golpes cargados.
+
+Evidencia: `tests/hormiga12-glove32-research` conserva 16 animaciones normales del segundo actor; `tests/hormiga12-glove32-check` conserva ocho pruebas de alcance con el lector y mezclador reales silenciados, cuatro positivas con daño real y cuatro negativas sin daño. La copia usa poses, salud y defensa de ensayo; no demuestra una pelea natural ni una escucha humana. `tests/hormiga12-behavior32-research` conserva las comprobaciones de menú con acciones del motor, incluidos carga 1 a 0 y aplicación al segundo personaje. El recibo final y la suite general están en el caso de alcance.
+
+Los cambios Lua requieren recarga confirmada o el próximo inicio del lector; consulta `continuar.md` para la activación realizada. El respaldo `backups/antes-comportamiento-nudillo32.zip` permite revertir solo esta entrega: restaura `source/submenus.lua`, `geometry.lua`, `radar.lua`, `weapon-feedback.lua` y `sound-catalog.lua`, y aparta `source/glove-boxes.lua`. Conserva ROM, partidas, configuraciones habituales, charset C9, referencias del castillo y sonidos anteriores.
